@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<!--http://dmf313.ir/%D9%BE%D8%B1%D9%88%DA%98%D9%87-avr-%D8%B4%D9%85%D8%A7%D8%B1%D8%B4-%D8%B6%D8%B1%D8%A8%D8%A7%D9%86-%D9%82%D9%84%D8%A8-%D8%A8%D8%A7-%D9%86%D8%A8%D8%B6-%D8%A7%D9%86%DA%AF%D8%B4%D8%AA/
+-->
+<!--style="background-color:hsl(20,20,20);"-->
+<head>
+<meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0">
+<meta charset="UTF-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--script src="myScript1.js"></script--> 
+
+<script>
+
+
+ </script> 
+<style>
+{
+
+}
+body {
+	background-color:#e9ecef;
+	font-family:b-nazanin ,arial;
+	margin:0;
+	padding:0;
+	border-width:0;
+	}
+a,p,h1,form
+	{
+	font-family:b-nazanin ,arial;
+	padding:1%; 
+	border:hidden solid black;
+	width:100%;
+	}
+	
+#head
+	{
+	/*background-color:#afa;
+	height:150px;*/
+	}
+.home,.pg
+	{
+	color:#eee;
+	background-color:#eee;
+	font-family:b-nazanin ,arial;
+	font-size:20px;
+	-webkit-transition-property: width; /* Safari */
+	-webkit-transition-duration: 2s; /* Safari */
+	transition-property: margin-left, background-color,visibility,margin-top,height,padding,color;
+	transition-duration: 3s;
+	margin:0;
+	
+
+	}
+.pg
+	{
+	margin:1%;	
+	}
+.home:hover {	
+	margin-left:30%;	
+	}
+.menu,.gp{	
+	display:block;	
+	transition-property: margin-left, background-color,visibility,margin-top,height,padding,color;
+	transition-duration: 1s;
+	visibility:hidden;
+	height:100%;
+	overflow-y: scroll;
+	top:60px;
+	position:sticky;
+	}
+	
+.gp
+	{
+	padding:0%;
+	overflow-y: visible;
+	}
+
+.input-group
+	{
+	width:50%;
+	}
+.open{
+		margin:0;
+
+		float:right;
+		background-color:gray;
+		color:white;
+		text-align:center;
+		padding:0%;
+		font-size:30px;
+		border-radius: 0px;
+		}
+.open:hover
+		{
+		background-color:black;
+		}
+.static {	
+
+			top:0;
+			position:sticky;
+			background-color:gray;
+
+		}
+.arow,.row	
+		{
+		width:100%;	
+
+		}
+.slideshow
+		{
+		width:100%;
+		height:300px;
+		overflow:hidden;
+		border:black solid 1px;
+		 border-radius: 20px;
+		}
+.form-control
+		{
+		 border-radius: 10px;
+		}
+		
+</style> 
+</head>
+<body>
+<!--script>
+window.alert("first alert:\n                                                would you start!");
+console.log(5 + 6);
+</script-->
+
+
+
+<div id="head" class="row  header" style="margin:0;">
+<h1  id="heading" style="text-align:center;">فروشگاه حسام
+</h1>
+
+</div>
+<div class="row static" style="padding:0;margin:0px;">
+<div class="col-sm-1 open jumbotron" style="float:left;" onclick="pg();">خانه</div>
+<div class="col-sm-1 open jumbotron" style="float:left;" onclick="mnu();">ارتباط</div>
+<div class="col-sm-1 open jumbotron" style="float:left;" onclick="mnu();">درباره</div>
+<div class="col-sm-1 open jumbotron" style="float:left;" onclick="mnu();">عجب</div>
+</div>
+
+
+
+<div class="col jumbotron">
+
+
+<span id="p4" class="row" style="padding:1%;margin:1%;">	
+<iframe src="forosh.html" class="slideshow">
+</iframe>
+</span>
+
+
+<span id="p4" class="row" style="padding:1%;margin:1%;">	
+<iframe src="forosh.html" class="slideshow">
+</iframe>
+</span>
+
+<br>
+
+
+<hr style="position:relative;">
+
+<br>
+<div id="down" class="row jumbotron" style="font-family:b-nazanin;text-align:right;margin-bottom:0;width:100%;">
+  <h1>:ثبت سفارش</h1> 
+  <form align="left" action="/action_page.php" target="_blank"method="post">
+  <h4>email:</h4>
+  
+  <input onclick="if(this.value=='example@yahoo.com')this.value='';" class="input-group form-control" type="text" value="example@yahoo.com" name="email"><br><br>
+ <h4>  Enter text:</h4> 
+ <textarea onclick="if(this.value.search('Enter your offers...')!=-1)this.value='';" class="input-group form-control" name="message" rows="5" cols="20">
+	Enter your offers...
+ </textarea><br><br>
+  <input align="right" class="btn-success input-group-btn btn-lg"onclick="alert('your massage has been sent!');" type="submit" value="send">
+  <input align="right" class="btn-info input-group-btn btn-lg" type="reset"><br>
+  09................5 تلفن 
+  </form>
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>

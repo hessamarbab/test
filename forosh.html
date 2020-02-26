@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0">
+<meta charset="UTF-8">
+<meta>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--script src="myScript1.js"></script--> 
+<script>
+var h=12.5;
+var h1=12.5;
+var anm = document.getElementsByClassName('animate');
+var anm1 = document.getElementsByClassName('animate1');
+function f1(){
+var i;
+/*for (i = 0; i < anm.length; i++) {
+anm[i].style.animationPlayState='paused';
+}*/
+	
+}
+function f2(){
+var i;
+/*for (i = 0; i < anm.length; i++) {
+anm[i].style.animationPlayState='running';
+}*/
+}
+function slidel1()
+			{
+			var i;
+			if(h1<12.5){
+			h1=h1+50;
+			for (i = 0; i < anm1.length; i++)
+				{			
+				anm1[i].style.left=h1+"%";	
+				}
+				}
+			
+			}
+function slider1()
+			{
+			var i;
+			if(h1>-312.5){
+			h1=h1-50;
+			for (i = 0; i < anm1.length; i++)
+				{			
+				anm1[i].style.left=h1+"%";	
+				}
+				}
+				
+			}
+
+
+function slidel()
+			{
+			var i;
+			if(h<12.5){
+			h=h+50;
+			for (i = 0; i < anm.length; i++)
+				{			
+				anm[i].style.left=h+"%";	
+				}
+				}
+			
+			}
+function slider()
+			{
+			var i;
+			if(h>-312.5){
+			h=h-50;
+			for (i = 0; i < anm.length; i++)
+				{			
+				anm[i].style.left=h+"%";	
+				}
+				}
+				
+			}
+</script>
+<style> 
+
+.animate,.animate1{
+			
+			padding:0px;
+			left:12.5%;
+			width: 100%;
+			height:100%;
+			position: relative;
+			/*animation: ourmove 20s infinite;
+			animation-direction:alternate-reverse;*/
+			transition-property: left;
+			transition-duration: 5s;
+			display: inline-block;
+			}
+
+		.show{
+		background-color:black;
+		width=100%;
+		height=100%;
+		padding:0px 0px 20px  0px ;
+		overflow: hidden;
+		white-space: nowrap;
+		position:fixed;
+		left:0;
+		right:0;
+		}
+	/*	img{width:100%;height:100%;}
+		@keyframes ourmove {
+		  from {left: 100%;}
+		  to {left: -100%;}
+		}*/
+.cntr	
+		{
+		top:35%;
+		font-size:2vw;
+		color:white;
+		display: inline-block;
+		position:absolute;
+		}
+
+.slide	{
+		width:25%;
+		height:100%;
+		margin-left:25%;
+	//	white-space: nowrap;
+	//	position:absolute;
+		}
+.txt	{	
+			margin-left:-12%;
+			color: #f00;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: -30px;
+			width: 100%;
+			text-align: center;
+
+		}
+a		{
+	//	white-space:pre;
+	
+		}
+</style>
+</head>
+<body id="demo">
+
+<div class="show">
+<span width=100% height=100%>
+
+<span class="animate" width=100% >
+<a href="forosh.html"  target="_parent"><span class="txt">قهوه <br>5000</span><img class="slide" style="width:25%" src="20170322_190225.jpg"></a>
+<a href="forosh.html"  target="_parent"><span class="txt">چای<br>1000</span><img class="slide" style="width:25%" src="20170322_190022.jpg"></a>
+<a href="forosh.html"  target="_parent"><span class="txt">5000<br> لاله</span><img class="slide" style="width:25%" src="20170322_182910.jpg"></a>
+<a href="forosh.html"  target="_parent"><span class="txt">i,kumjumu,iu,</span><img class="slide" style="width:25%" src="20170322_182818.jpg"></a>
+<a href="forosh.html"  target="_parent"><span class="txt">fntrtmjmfnyju</span><img class="slide" style="width:25%" src="20170322_190225.jpg"></a>
+<a href="forosh.html"  target="_parent"><span class="txt">vr yjymm ukuuki</span><img class="slide" style="width:25%" src="20170322_190022.jpg"></a>
+<a href="forosh.html"  target="_parent"><span class="txt">gfhrhvyctyjvvy</span><img class="slide" style="width:25%" src="20170322_182910.jpg"></a>
+<a href="forosh.html"  target="_parent"><span class="txt">bgfdgbtryhtnnuyrvd</span><img class="slide" style="width:25%" src="20170322_182818.jpg"></a>
+</span>
+
+<br>
+
+<button class="btn input-group-btn btn-lg cntr" onclick="slidel()" style="left:10px"><<</button>
+<button class="btn input-group-btn btn-lg cntr" onclick="slider()" style="right:10px">>></button>
+</span>
+
+
+<!--div class="row show">
+<span width=100%>
+<span class="animate1" width=100%>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_190225.jpg"></a>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_190022.jpg"></a>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_182910.jpg"></a>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_182818.jpg"></a>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_190225.jpg"></a>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_190022.jpg"></a>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_182910.jpg"></a>
+<a href="forosh.html"  target="_parent"><img class="slide" style="width:25%" src="20170322_182818.jpg"></a>
+</span>
+
+<button class="btn input-group-btn btn-lg cntr" onclick="slidel1()" style="float:left"><<</button>
+<button class="btn input-group-btn btn-lg cntr" onclick="slider1()" style="float:right">>></button>
+</span>
+
+
+</div-->
+<!--div class="row" style="padding:auto"-->
+	
+<!--/div-->
+</body>
+</html>

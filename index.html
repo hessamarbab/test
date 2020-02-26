@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<!--http://dmf313.ir/%D9%BE%D8%B1%D9%88%DA%98%D9%87-avr-%D8%B4%D9%85%D8%A7%D8%B1%D8%B4-%D8%B6%D8%B1%D8%A8%D8%A7%D9%86-%D9%82%D9%84%D8%A8-%D8%A8%D8%A7-%D9%86%D8%A8%D8%B6-%D8%A7%D9%86%DA%AF%D8%B4%D8%AA/
+-->
+<!--style="background-color:hsl(20,20,20);"-->
+<head>
+<meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0">
+<meta charset="UTF-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--script src="myScript1.js"></script--> 
+
+<script>
+var j=0;
+var l=0;
+var i=0;
+ function myf(){
+ i++;
+
+ if(i==1){
+		document.getElementById("heading").innerHTML = "Hello JavaScript!";
+		document.getElementById("heading").style.color = "red";
+		}
+	else
+	{
+	document.getElementById("heading").innerHTML = "Hesam Example JavaScript!";
+	document.getElementById("heading").style.color = "green";
+	i=0;
+	}
+ }
+ function mnu()
+ {
+	var a=document.getElementsByClassName('menu')[0];
+	var b=document.getElementsByClassName('home');
+	var k=0;		  
+	j++;
+  if(j%2==0)
+	{
+	
+	for(k=0;k<b.length;k++)
+    {
+	b[k].style.backgroundColor='#eee';
+	b[k].style.color='#eee';
+	b[k].style.marginTop='0%';
+	b[k].style.padding='0%';
+	}
+	a.style.marginTop='0';
+	a.style.height='0';
+	
+	
+	a.style.padding='0';
+	a.style.visibility='hidden';
+  }
+  else
+  {
+  a.style.visibility='visible';
+  a.style.height='500px';
+  a.style.marginTop='45px';
+//  a..style.padding='1%';
+for(k=0;k<b.length;k++)
+  {
+  b[k].style.backgroundColor='gray';
+  b[k].style.color='white';
+  b[k].style.marginTop='5%';
+  b[k].style.padding='5%';
+  
+  }
+  }
+ }
+ function pg()
+ {
+	var a=document.getElementsByClassName('gp')[0];
+	var b=document.getElementsByClassName('pg');
+	var k=0;		  
+	l++;
+  if(l%2==0)
+	{
+	
+	for(k=0;k<b.length;k++)
+    {
+	/*b[k].style.backgroundColor='#eee';
+	b[k].style.color='#eee';
+	b[k].style.marginTop='0%';
+	b[k].style.height='0';
+//	b[k].style.padding='0%';*/
+	}	
+	a.style.marginTop='0';
+	a.style.height='0';
+	a.style.visibility='hidden';
+
+//	a..style.padding='0';
+  }
+  else
+  {
+  a.style.visibility='visible';
+  a.style.height='500px';
+  a.style.marginTop='45px';
+//  a..style.padding='1%';
+for(k=0;k<b.length;k++)
+  {
+ // b[k].style.backgroundColor='red';
+  b[k].style.color='black';
+ /*b[k].style.marginTop='5%';
+  b[k].style.padding='5%';
+  b[k].style.height='auto';*/
+  
+  }
+  }
+ }
+ </script> 
+<style>
+{
+
+}
+body {
+	font-family:b-nazanin ,arial;
+	background-color: gray;
+	margin:0;
+	}
+a,p,h1,h2,form
+	{
+	font-family:b-nazanin ,arial;
+	padding:1%; 
+	border:hidden solid black;
+	width:100%;
+	}
+	
+#head
+	{
+		color:white;
+	}
+.home,.pg
+	{
+	color:#eee;
+	background-color:#eee;
+	font-family:b-nazanin ,arial;
+	font-size:20px;
+	-webkit-transition-property: width; /* Safari */
+	-webkit-transition-duration: 2s; /* Safari */
+	transition-property: margin-left, background-color,visibility,margin-top,height,padding,color;
+	transition-duration: 3s;
+	margin:0;
+	
+
+	}
+.pg
+	{
+	margin:5%;	
+	}
+.home:hover {	
+	margin-left:30%;	
+	}
+.menu,.gp{	
+	display:block;	
+	transition-property: margin-left, background-color,visibility,margin-top,height,padding,color;
+	transition-duration: 1s;
+	visibility:hidden;
+	height:100%;
+	overflow-y: scroll;
+	top:60px;
+	position:sticky;
+	}
+	
+.gp
+	{
+	padding:0%;
+	overflow-y: visible;
+	}
+div{
+	margin=0;
+	padding=0;
+	border-width=0;
+	}
+.input-group
+	{
+	width:50%;
+	}
+.open{
+		
+		top:0px;
+		background-color:black;
+		color:white;
+		text-align:center;
+		padding:0%;
+		border:solid white 1px;
+		position:relative;
+		font-size:30px;
+		}
+.static {	
+
+			top:0;
+			position:sticky;
+			width:100%;
+			height:50px;
+
+		}
+.scroll	
+		{
+//		left:300px;
+		overflow-y: scroll;
+		height:500px;
+		border-size:0px;
+		}
+
+</style> 
+</head>
+<body>
+<!--script>
+window.alert("first alert:\n                                                would you start!");
+console.log(5 + 6);
+</script-->
+
+
+
+<div id="head" class="header" style="margin-bottom:0;">
+<h1  id="heading" style="text-align:center;">صفحه شخصی حسام
+</h1>
+</div>
+
+<div >
+
+<div class="col-sm-10 open" style="float:left;" onclick="pg();">خانه</div>
+<div class="col-sm-2 open" style="float:right;" onclick="mnu();">فهرست</div>
+</div>
+
+
+<div class="row jumbotron" style="padding-top:0;border:0;height=10px;">
+
+<div class="col-sm-10 gp scroll">
+
+<span id="p1" class="row pg">
+<p onclick="myf();">
+click here please -_*.
+click here please -_*.
+click here please -_*.
+</p>
+</span>
+
+<span id="p2" class="row pg">
+<p id="p2" >2<br>
+</p>
+</span>
+
+<span id="p3" class="row pg">
+<p>3<br>
+<img style="max-width:100% ;height=:auto;" class="img-thumbnail" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Workplace" usemap="#workmap">
+the third paragraph.
+</p>
+</span>
+
+<script>
+ document.getElementById("p2").innerHTML = "My2 First JavaScript";
+
+</script>
+<span id="p4" class="row" style="padding:5%;">
+<iframe src="forosh.html" style="width:1200px;height:300px;overflow:hidden;">
+</iframe>
+</span>
+<hr>
+<div  class="row jumbotron" style="font-family:b-nazanin;text-align:right;margin-bottom:0;">
+  <h2>:ارتباط با ما</h2> 
+  <form align="left" action="/action_page.php" target="_blank"method="post">
+  <h4 id="down">email:</h4>
+  
+  <input onclick="if(this.value=='example@yahoo.com')this.value='';" class="input-group form-control" type="text" placeholder="example@yahoo.com" name="email"><br><br>
+ <h4>  Enter text:</h4> 
+ <textarea placeholder="Enter your offers..." class="input-group form-control" name="message" rows="5" cols="20"></textarea><br><br>
+  <input align="right" class="btn-success input-group-btn btn-lg"onclick="alert('your massage has been sent!');" type="submit" value="send">
+  <input align="right" class="btn-info input-group-btn btn-lg" type="reset"><br>
+  09................5 تلفن 
+  </form>
+</div>
+</div>
+
+<div class="col-sm-2 menu" >
+
+<span  class="row"><a href="#top"class="home"align="right">خانه</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p1"		class="home"align="right">آرشیو1</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p2"		class="home"align="right">مطالب اصلی</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p4"   	class="home"align="right">سایت من</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#down" 	class="home"align="right">ارتباط با ما</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p3"  	class="home"align="right">آرشیو2</a></span>
+<span  class="row"><a href="#top"class="home"align="right">خانه</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p1"		class="home"align="right">آرشیو</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p2"		class="home"align="right">مطالب اصلی</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p4"   	class="home"align="right">سایت من</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#down" 	class="home"align="right">ارتباط با ما</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p3"  	class="home"align="right">آرشیو</a></span>
+<span  class="row"><a href="#top"class="home"align="right">خانه</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p1"		class="home"align="right">آرشیو</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p2"		class="home"align="right">مطالب اصلی</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p4"   	class="home"align="right">سایت من</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#down" 	class="home"align="right">ارتباط با ما</a></span>
+<span onclick=" if(l%2==0)pg();" class="row"><a href="#p3"  	class="home"align="right">آرشیو</a></span>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
